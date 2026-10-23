@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#222"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="65" y="55" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="start">A0  Обеспечивать библиотечное обслуживание</text>
+<text x="65" y="95" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="normal" text-anchor="start">IDEF0  Библиотечное обслуживание</text>
+<text x="65" y="1174" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="normal" text-anchor="start">I — слева   C — сверху   O — справа   M — снизу   • — ветвление стрелки</text>
+<text x="1190" y="1140" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="normal" text-anchor="end">Узел A0</text>
+<polyline points="250,130 250,170 250,170" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="250,130 250,170 250,170" fill="none" stroke="#222" stroke-width="2.4"/>
+<text x="258" y="158" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">C1</text>
+<polyline points="250,170 250,285" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="250,170 250,285" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="545,130 545,205 1025,205" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="545,130 545,205 1025,205" fill="none" stroke="#222" stroke-width="2.4"/>
+<text x="553" y="158" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">C2</text>
+<polyline points="545,205 545,465" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="545,205 545,465" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="545" cy="205" r="4.5" fill="#222"/>
+<polyline points="785,205 785,645" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="785,205 785,645" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="785" cy="205" r="4.5" fill="#222"/>
+<polyline points="1025,205 1025,825" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="1025,205 1025,825" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="1025" cy="205" r="4.5" fill="#222"/>
+<polyline points="840,130 840,240 1080,240" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="840,130 840,240 1080,240" fill="none" stroke="#222" stroke-width="2.4"/>
+<text x="848" y="158" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">C3</text>
+<polyline points="840,240 840,645" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="840,240 840,645" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="840" cy="240" r="4.5" fill="#222"/>
+<polyline points="1080,240 1080,825" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="1080,240 1080,825" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="1080" cy="240" r="4.5" fill="#222"/>
+<polyline points="250,1100 250,1060 970,1060" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="250,1100 250,1060 970,1060" fill="none" stroke="#222" stroke-width="2.4"/>
+<text x="258" y="1090" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">M1</text>
+<polyline points="250,1060 250,410" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="250,1060 250,410" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="250" cy="1060" r="4.5" fill="#222"/>
+<polyline points="490,1060 490,590" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="490,1060 490,590" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="490" cy="1060" r="4.5" fill="#222"/>
+<polyline points="730,1060 730,770" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="730,1060 730,770" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="730" cy="1060" r="4.5" fill="#222"/>
+<polyline points="970,1060 970,950" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="970,1060 970,950" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="970" cy="1060" r="4.5" fill="#222"/>
+<polyline points="305,1100 305,1030 1025,1030" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="305,1100 305,1030 1025,1030" fill="none" stroke="#222" stroke-width="2.4"/>
+<text x="313" y="1090" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">M2</text>
+<polyline points="305,1030 305,410" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="305,1030 305,410" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="305" cy="1030" r="4.5" fill="#222"/>
+<polyline points="545,1030 545,590" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="545,1030 545,590" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="545" cy="1030" r="4.5" fill="#222"/>
+<polyline points="785,1030 785,770" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="785,1030 785,770" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="785" cy="1030" r="4.5" fill="#222"/>
+<polyline points="1025,1030 1025,950" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="1025,1030 1025,950" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="1025" cy="1030" r="4.5" fill="#222"/>
+<polyline points="360,1100 360,1000 1080,1000" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="360,1100 360,1000 1080,1000" fill="none" stroke="#222" stroke-width="2.4"/>
+<text x="368" y="1090" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">M3</text>
+<polyline points="360,1000 360,410" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="360,1000 360,410" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="360" cy="1000" r="4.5" fill="#222"/>
+<polyline points="840,1000 840,770" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="840,1000 840,770" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="840" cy="1000" r="4.5" fill="#222"/>
+<polyline points="1080,1000 1080,950" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="1080,1000 1080,950" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="1080" cy="1000" r="4.5" fill="#222"/>
+<polyline points="90,300 150,300" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="90,300 150,300" fill="none" stroke="#222" stroke-width="2.4"/>
+<polyline points="150,300 150,347.5 215,347.5" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="150,300 150,347.5 215,347.5" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="90,425 162,425" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="90,425 162,425" fill="none" stroke="#222" stroke-width="2.4"/>
+<polyline points="162,425 162,506.6666666666667 455,506.6666666666667" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="162,425 162,506.6666666666667 455,506.6666666666667" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="90,550 174,550" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="90,550 174,550" fill="none" stroke="#222" stroke-width="2.4"/>
+<polyline points="174,550 174,548.3333333333334 455,548.3333333333334" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="174,550 174,548.3333333333334 455,548.3333333333334" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="90,675 186,675" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="90,675 186,675" fill="none" stroke="#222" stroke-width="2.4"/>
+<polyline points="186,675 186,856.25 935,856.25" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="186,675 186,856.25 935,856.25" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="90,800 198,800" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="90,800 198,800" fill="none" stroke="#222" stroke-width="2.4"/>
+<polyline points="198,800 198,887.5 935,887.5" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="198,800 198,887.5 935,887.5" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="440,316.25 1195,316.25" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="440,316.25 1195,316.25" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="680,506.6666666666667 1195,506.6666666666667" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="680,506.6666666666667 1195,506.6666666666667" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="920,686.6666666666666 1195,686.6666666666666" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="920,686.6666666666666 1195,686.6666666666666" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="1160,856.25 1195,856.25" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="1160,856.25 1195,856.25" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="440,347.5 575,347.5 575,465" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="440,347.5 575,347.5 575,465" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="440,378.75 685,378.75 685,676.25 695,676.25" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="440,378.75 685,378.75 685,676.25 695,676.25" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="680,548.3333333333334 680,548.3333333333334 680,707.5 695,707.5" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="680,548.3333333333334 680,548.3333333333334 680,707.5 695,707.5" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="920,728.3333333333334 925,728.3333333333334 925,918.75 935,918.75" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="920,728.3333333333334 925,728.3333333333334 925,918.75 935,918.75" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="1160,887.5 1215,887.5 1215,135 630,135 630,465" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="1160,887.5 1215,887.5 1215,135 630,135 630,465" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<polyline points="1160,918.75 1228,918.75 1228,1090 680,1090 680,738.75 695,738.75" fill="none" stroke="white" stroke-width="7"/>
+<polyline points="1160,918.75 1228,918.75 1228,1090 680,1090 680,738.75 695,738.75" fill="none" stroke="#222" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="215" y="285" width="225" height="125" fill="#f7f8f9" stroke="#222" stroke-width="2.5"/>
+<text x="327.5" y="326.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">Управлять</text>
+<text x="327.5" y="355.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">библиотечным</text>
+<text x="327.5" y="384.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">фондом</text>
+<text x="426" y="398" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="end">1</text>
+<text x="218" y="437" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">A1</text>
+<rect x="455" y="465" width="225" height="125" fill="#f7f8f9" stroke="#222" stroke-width="2.5"/>
+<text x="567.5" y="506.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">Обслуживать</text>
+<text x="567.5" y="535.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">читателей и</text>
+<text x="567.5" y="564.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">бронирования</text>
+<text x="666" y="578" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="end">2</text>
+<text x="458" y="617" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">A2</text>
+<rect x="695" y="645" width="225" height="125" fill="#f7f8f9" stroke="#222" stroke-width="2.5"/>
+<text x="807.5" y="686.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">Оформлять и</text>
+<text x="807.5" y="715.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">выполнять</text>
+<text x="807.5" y="744.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">выдачу</text>
+<text x="906" y="758" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="end">3</text>
+<text x="698" y="797" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">A3</text>
+<rect x="935" y="825" width="225" height="125" fill="#f7f8f9" stroke="#222" stroke-width="2.5"/>
+<text x="1047.5" y="866.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">Принимать</text>
+<text x="1047.5" y="895.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">возврат и вести</text>
+<text x="1047.5" y="924.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" text-anchor="middle" fill="#111">расчёты</text>
+<text x="1146" y="938" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="end">4</text>
+<text x="938" y="977" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">A4</text>
+<text x="1285" y="150" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="bold" text-anchor="start">Входы</text>
+<text x="1290" y="187" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">I1  Поступившие книги</text>
+<text x="1290" y="223" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">I2  Данные читателей</text>
+<text x="1290" y="259" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">I3  Запросы на обслуживание</text>
+<text x="1290" y="295" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">I4  Возвращённые экземпляры</text>
+<text x="1290" y="331" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">I5  Сведения о платежах</text>
+<text x="1285" y="375" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="bold" text-anchor="start">Выходы</text>
+<text x="1290" y="412" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">O1  Каталог и сведения о фонде</text>
+<text x="1290" y="448" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">O2  Читательские билеты и бронирования</text>
+<text x="1290" y="484" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">O3  Выданные книги и документы</text>
+<text x="1290" y="520" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">O4  Документы возврата и расчётов</text>
+<text x="1285" y="564" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="bold" text-anchor="start">Управление</text>
+<text x="1290" y="601" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">C1  Правила учёта фонда</text>
+<text x="1290" y="637" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">C2  Правила обслуживания</text>
+<text x="1290" y="673" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">C3  Сроки и тарифы</text>
+<text x="1285" y="717" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="bold" text-anchor="start">Механизмы</text>
+<text x="1290" y="754" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">M1  Библиотекари</text>
+<text x="1290" y="790" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">M2  Информационная система</text>
+<text x="1290" y="826" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">M3  Помещения и оборудование</text>
+<text x="1285" y="870" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="bold" text-anchor="start">Внутренние связи</text>
+<text x="1290" y="906" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">F1  Каталог и сведения о фонде</text>
+<text x="1290" y="942" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">F2  Экземпляры фонда</text>
+<text x="1290" y="978" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">F3  Проверенные запросы на выдачу</text>
+<text x="1290" y="1014" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">F4  Сведения о выдачах</text>
+<text x="1290" y="1050" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">F5  Сведения о задолженности</text>
+<text x="1290" y="1086" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="normal" text-anchor="start">F6  Доступные после возврата экземпляры</text>
+<rect x="92" y="260" width="32" height="31" fill="white"/>
+<text x="95" y="285" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">I1</text>
+<rect x="92" y="385" width="32" height="31" fill="white"/>
+<text x="95" y="410" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">I2</text>
+<rect x="92" y="510" width="32" height="31" fill="white"/>
+<text x="95" y="535" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">I3</text>
+<rect x="92" y="635" width="32" height="31" fill="white"/>
+<text x="95" y="660" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">I4</text>
+<rect x="92" y="760" width="32" height="31" fill="white"/>
+<text x="95" y="785" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">I5</text>
+<rect x="1197" y="276.25" width="32" height="31" fill="white"/>
+<text x="1200" y="301.25" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">O1</text>
+<rect x="1197" y="466.6666666666667" width="32" height="31" fill="white"/>
+<text x="1200" y="491.6666666666667" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">O2</text>
+<rect x="1197" y="646.6666666666666" width="32" height="31" fill="white"/>
+<text x="1200" y="671.6666666666666" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">O3</text>
+<rect x="1197" y="816.25" width="32" height="31" fill="white"/>
+<text x="1200" y="841.25" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">O4</text>
+<rect x="504.5" y="307.5" width="32" height="31" fill="white"/>
+<text x="507.5" y="332.5" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">F1</text>
+<rect x="559.5" y="338.75" width="32" height="31" fill="white"/>
+<text x="562.5" y="363.75" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">F2</text>
+<rect x="677.0" y="508.33333333333337" width="32" height="31" fill="white"/>
+<text x="680.0" y="533.3333333333334" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">F3</text>
+<rect x="919.5" y="688.3333333333334" width="32" height="31" fill="white"/>
+<text x="922.5" y="713.3333333333334" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">F4</text>
+<rect x="1097" y="101" width="32" height="31" fill="white"/>
+<text x="1100" y="126" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">F5</text>
+<rect x="1057" y="1055" width="32" height="31" fill="white"/>
+<text x="1060" y="1080" fill="#181818" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="start">F6</text>
+</svg>

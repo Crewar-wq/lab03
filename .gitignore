@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+artifacts/
+*.db
+*.db-wal
+*.db-shm
+.idea/
+.vscode/
+*.jar

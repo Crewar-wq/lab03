@@ -1,0 +1,148 @@
+@startuml library_er
+!pragma layout smetana
+left to right direction
+hide circle
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam linetype ortho
+skinparam classFontName DejaVu Sans
+skinparam classFontSize 18
+skinparam classAttributeFontSize 16
+skinparam ArrowFontName DejaVu Sans
+skinparam ArrowFontSize 16
+skinparam classBackgroundColor #F6F7F9
+skinparam classBorderColor #333333
+skinparam ArrowColor #333333
+skinparam nodesep 45
+skinparam ranksep 65
+title
+ER модель библиотечного обслуживания
+16 сущностей и 19 связей
+end title
+
+entity "Author\nАвтор" as Author {
+  * AuthorId <<PK>>
+  * FullName
+}
+
+entity "Publisher\nИздательство" as Publisher {
+  * PublisherId <<PK>>
+  * Name
+}
+
+entity "Category\nКатегория" as Category {
+  * CategoryId <<PK>>
+  * Name
+}
+
+entity "Book\nИздание" as Book {
+  * BookId <<PK>>
+  * PublisherId <<FK>>
+  * Title
+    Isbn <<UQ>>
+}
+
+entity "BookAuthor\nАвторство" as BookAuthor {
+  * BookId <<PK FK>>
+  * AuthorId <<PK FK>>
+}
+
+entity "BookCategory\nРубрикация" as BookCategory {
+  * BookId <<PK FK>>
+  * CategoryId <<PK FK>>
+}
+
+entity "Branch\nФилиал" as Branch {
+  * BranchId <<PK>>
+  * Name
+}
+
+entity "StorageLocation\nМесто хранения" as StorageLocation {
+  * LocationId <<PK>>
+  * BranchId <<FK>>
+  * ShelfCode
+}
+
+entity "BookCopy\nЭкземпляр" as BookCopy {
+  * CopyId <<PK>>
+  * BookId <<FK>>
+  * LocationId <<FK>>
+  * InventoryNumber <<UQ>>
+}
+
+entity "Reader\nЧитатель" as Reader {
+  * ReaderId <<PK>>
+  * CardNumber <<UQ>>
+  * Status
+}
+
+entity "Employee\nСотрудник" as Employee {
+  * EmployeeId <<PK>>
+  * FullName
+  * Role
+}
+
+entity "Reservation\nБронирование" as Reservation {
+  * ReservationId <<PK>>
+  * ReaderId <<FK>>
+  * BookId <<FK>>
+  * PickupBranchId <<FK>>
+  * Status
+}
+
+entity "Loan\nВыдача" as Loan {
+  * LoanId <<PK>>
+  * ReaderId <<FK>>
+  * IssuedByEmployeeId <<FK>>
+  * IssuedAt
+}
+
+entity "LoanItem\nПозиция выдачи" as LoanItem {
+  * LoanItemId <<PK>>
+  * LoanId <<FK>>
+  * CopyId <<FK>>
+  * DueAt
+    ReturnedByEmployeeId <<FK>>
+}
+
+entity "Fine\nШтраф" as Fine {
+  * FineId <<PK>>
+  * LoanItemId <<FK UQ>>
+  * AmountCents
+}
+
+entity "Payment\nПлатёж" as Payment {
+  * PaymentId <<PK>>
+  * FineId <<FK>>
+  * ReceivedByEmployeeId <<FK>>
+  * AmountCents
+  * ReceiptNumber <<UQ>>
+}
+
+Publisher "1" -- "0..*" Book
+Book "1" -- "0..*" BookAuthor
+Author "1" -- "0..*" BookAuthor
+Book "1" -- "0..*" BookCategory
+Category "1" -- "0..*" BookCategory
+Book "1" -- "0..*" BookCopy
+Branch "1" -- "0..*" StorageLocation
+StorageLocation "1" -- "0..*" BookCopy
+Reader "1" -- "0..*" Reservation
+Book "1" -- "0..*" Reservation
+Branch "1" -- "0..*" Reservation
+Reader "1" -- "0..*" Loan
+Employee "1" -- "0..*" Loan : выдал
+Loan "1" -- "1..*" LoanItem
+BookCopy "1" -- "0..*" LoanItem
+Employee "0..1" -- "0..*" LoanItem : принял возврат
+LoanItem "1" -- "0..1" Fine
+Fine "1" -- "0..*" Payment
+Employee "1" -- "0..*" Payment : учёл оплату
+
+legend bottom
+PK — первичный ключ    FK — внешний ключ    UQ — уникальность
+* — обязательный атрибут    0..1 — необязательная связь    0..* — любое число
+Loan содержит 1..* LoanItem по бизнес правилу завершённой выдачи
+BookCopy имеет 0..* позиций за историю и не более 1 активной позиции
+endlegend
+@enduml

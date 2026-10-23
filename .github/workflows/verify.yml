@@ -1,0 +1,30 @@
+name: Verify Lab 03
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Model and database checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7.0.1
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Run 42 checks and 3 scenarios
+        run: python scripts/verify.py
+      - name: Upload execution evidence
+        if: always()
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: lab03-verification
+          path: artifacts/
+          if-no-files-found: error

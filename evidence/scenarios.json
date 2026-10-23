@@ -1,0 +1,35 @@
+{
+  "sqlite_version": "3.53.1",
+  "scenarios": [
+    {
+      "scenario": "Регистрация и бронирование",
+      "reader": "CARD-003",
+      "book_id": 1,
+      "branch_id": 1,
+      "reservation_status": "queued"
+    },
+    {
+      "scenario": "Выдача книги",
+      "loan_id": 1,
+      "copy_id": 1,
+      "due_at": "2026-10-15T18:00:00",
+      "reservation_status": "fulfilled",
+      "copy_available": false
+    },
+    {
+      "scenario": "Возврат и оплата штрафа",
+      "late_calendar_days": 3,
+      "rate_cents_per_day": 1000,
+      "fine_cents": 3000,
+      "payments_cents": [
+        1000,
+        2000
+      ],
+      "debt_after_first_payment_cents": 2000,
+      "final_debt_cents": 0,
+      "copy_available": true
+    }
+  ],
+  "foreign_key_check": [],
+  "integrity_check": "ok"
+}

@@ -1,0 +1,47 @@
+test_blocked_reader_cannot_receive_copy (test_database.DatabaseChecks.test_blocked_reader_cannot_receive_copy) ... ok
+test_completed_return_cannot_be_reopened (test_database.DatabaseChecks.test_completed_return_cannot_be_reopened) ... ok
+test_copy_becomes_available_after_return (test_database.DatabaseChecks.test_copy_becomes_available_after_return) ... ok
+test_copy_cannot_have_two_active_loans (test_database.DatabaseChecks.test_copy_cannot_have_two_active_loans) ... ok
+test_due_date_must_not_precede_issue (test_database.DatabaseChecks.test_due_date_must_not_precede_issue) ... ok
+test_fine_cannot_be_reduced_below_payments (test_database.DatabaseChecks.test_fine_cannot_be_reduced_below_payments) ... ok
+test_fine_is_unique_for_each_loan_item (test_database.DatabaseChecks.test_fine_is_unique_for_each_loan_item) ... ok
+test_fine_requires_completed_late_return (test_database.DatabaseChecks.test_fine_requires_completed_late_return) ... ok
+test_foreign_keys_enabled_and_consistent (test_database.DatabaseChecks.test_foreign_keys_enabled_and_consistent) ... ok
+test_many_to_many_author_and_category (test_database.DatabaseChecks.test_many_to_many_author_and_category) ... ok
+test_money_must_be_positive_integer_cents (test_database.DatabaseChecks.test_money_must_be_positive_integer_cents) ... ok
+test_nonexistent_parent_is_rejected (test_database.DatabaseChecks.test_nonexistent_parent_is_rejected) ... ok
+test_partial_and_full_payment_balance (test_database.DatabaseChecks.test_partial_and_full_payment_balance) ... ok
+test_payment_cannot_exceed_balance (test_database.DatabaseChecks.test_payment_cannot_exceed_balance) ... ok
+test_payment_must_not_precede_fine (test_database.DatabaseChecks.test_payment_must_not_precede_fine) ... ok
+test_payment_update_cannot_overpay (test_database.DatabaseChecks.test_payment_update_cannot_overpay) ... ok
+test_reader_cannot_exceed_five_active_copies (test_database.DatabaseChecks.test_reader_cannot_exceed_five_active_copies) ... ok
+test_repair_copy_cannot_be_issued (test_database.DatabaseChecks.test_repair_copy_cannot_be_issued) ... ok
+test_reservation_queue_uniqueness_and_history (test_database.DatabaseChecks.test_reservation_queue_uniqueness_and_history) ... ok
+test_return_cannot_precede_issue (test_database.DatabaseChecks.test_return_cannot_precede_issue) ... ok
+test_return_date_and_employee_are_paired (test_database.DatabaseChecks.test_return_date_and_employee_are_paired) ... ok
+test_shelf_unique_within_branch (test_database.DatabaseChecks.test_shelf_unique_within_branch) ... ok
+test_three_scenarios_run_end_to_end (test_database.DatabaseChecks.test_three_scenarios_run_end_to_end) ... ok
+test_unique_inventory_number (test_database.DatabaseChecks.test_unique_inventory_number) ... ok
+test_unique_reader_card (test_database.DatabaseChecks.test_unique_reader_card) ... ok
+test_unpaid_fine_blocks_next_issue (test_database.DatabaseChecks.test_unpaid_fine_blocks_next_issue) ... ok
+test_all_icom_are_connected (test_model.ModelChecks.test_all_icom_are_connected) ... ok
+test_boundary_and_internal_balance_at_each_child (test_model.ModelChecks.test_boundary_and_internal_balance_at_each_child) ... ok
+test_children_have_control_mechanism_input_and_output (test_model.ModelChecks.test_children_have_control_mechanism_input_and_output) ... ok
+test_context_balance (test_model.ModelChecks.test_context_balance) ... ok
+test_entity_count_and_primary_keys (test_model.ModelChecks.test_entity_count_and_primary_keys) ... ok
+test_er_matches_actual_sqlite_tables_and_columns (test_model.ModelChecks.test_er_matches_actual_sqlite_tables_and_columns) ... ok
+test_er_nullable_links_match_cardinality (test_model.ModelChecks.test_er_nullable_links_match_cardinality) ... ok
+test_er_source_has_all_entities_and_cardinalities (test_model.ModelChecks.test_er_source_has_all_entities_and_cardinalities) ... ok
+test_er_svg_is_successful_render (test_model.ModelChecks.test_er_svg_is_successful_render) ... ok
+test_every_function_is_decomposed (test_model.ModelChecks.test_every_function_is_decomposed) ... ok
+test_flow_endpoints_and_numbering (test_model.ModelChecks.test_flow_endpoints_and_numbering) ... ok
+test_generated_sources_are_reproducible (test_model.ModelChecks.test_generated_sources_are_reproducible) ... ok
+test_native_drawio_has_six_editable_pages (test_model.ModelChecks.test_native_drawio_has_six_editable_pages) ... ok
+test_required_levels (test_model.ModelChecks.test_required_levels) ... ok
+test_svg_exports_contain_icom_names (test_model.ModelChecks.test_svg_exports_contain_icom_names) ... ok
+test_top_level_function_count (test_model.ModelChecks.test_top_level_function_count) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.149s
+
+OK

@@ -1,0 +1,617 @@
+{
+  "entities": [
+    {
+      "name": "Author",
+      "title": "Автор",
+      "attributes": [
+        {
+          "name": "AuthorId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "FullName",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Автор произведения"
+    },
+    {
+      "name": "Publisher",
+      "title": "Издательство",
+      "attributes": [
+        {
+          "name": "PublisherId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Издатель книжного издания"
+    },
+    {
+      "name": "Category",
+      "title": "Категория",
+      "attributes": [
+        {
+          "name": "CategoryId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Тематическая рубрика каталога"
+    },
+    {
+      "name": "Book",
+      "title": "Издание",
+      "attributes": [
+        {
+          "name": "BookId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "PublisherId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "Title",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "Isbn",
+          "type": "TEXT",
+          "key": "UQ",
+          "nullable": true
+        },
+        {
+          "name": "PublicationYear",
+          "type": "INTEGER",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Библиографическая запись об издании"
+    },
+    {
+      "name": "BookAuthor",
+      "title": "Авторство",
+      "attributes": [
+        {
+          "name": "BookId",
+          "type": "INTEGER",
+          "key": "PK FK",
+          "nullable": false
+        },
+        {
+          "name": "AuthorId",
+          "type": "INTEGER",
+          "key": "PK FK",
+          "nullable": false
+        }
+      ],
+      "meaning": "Связующая сущность для изданий и авторов"
+    },
+    {
+      "name": "BookCategory",
+      "title": "Рубрикация",
+      "attributes": [
+        {
+          "name": "BookId",
+          "type": "INTEGER",
+          "key": "PK FK",
+          "nullable": false
+        },
+        {
+          "name": "CategoryId",
+          "type": "INTEGER",
+          "key": "PK FK",
+          "nullable": false
+        }
+      ],
+      "meaning": "Связующая сущность для изданий и категорий"
+    },
+    {
+      "name": "Branch",
+      "title": "Филиал",
+      "attributes": [
+        {
+          "name": "BranchId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "Address",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Место обслуживания читателей"
+    },
+    {
+      "name": "StorageLocation",
+      "title": "Место хранения",
+      "attributes": [
+        {
+          "name": "LocationId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "BranchId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "ShelfCode",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Полка внутри филиала"
+    },
+    {
+      "name": "BookCopy",
+      "title": "Экземпляр",
+      "attributes": [
+        {
+          "name": "CopyId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "BookId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "LocationId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "InventoryNumber",
+          "type": "TEXT",
+          "key": "UQ",
+          "nullable": false
+        },
+        {
+          "name": "ConditionStatus",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Физический экземпляр с инвентарным номером"
+    },
+    {
+      "name": "Reader",
+      "title": "Читатель",
+      "attributes": [
+        {
+          "name": "ReaderId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "CardNumber",
+          "type": "TEXT",
+          "key": "UQ",
+          "nullable": false
+        },
+        {
+          "name": "FullName",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "Email",
+          "type": "TEXT",
+          "key": "",
+          "nullable": true
+        },
+        {
+          "name": "Status",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Зарегистрированный получатель книг"
+    },
+    {
+      "name": "Employee",
+      "title": "Сотрудник",
+      "attributes": [
+        {
+          "name": "EmployeeId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "FullName",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "Role",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Исполнитель выдачи, возврата или оплаты"
+    },
+    {
+      "name": "Reservation",
+      "title": "Бронирование",
+      "attributes": [
+        {
+          "name": "ReservationId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "ReaderId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "BookId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "PickupBranchId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "ReservedAt",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "Status",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Заявка читателя на издание в филиале"
+    },
+    {
+      "name": "Loan",
+      "title": "Выдача",
+      "attributes": [
+        {
+          "name": "LoanId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "ReaderId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "IssuedByEmployeeId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "IssuedAt",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Документ выдачи одному читателю"
+    },
+    {
+      "name": "LoanItem",
+      "title": "Позиция выдачи",
+      "attributes": [
+        {
+          "name": "LoanItemId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "LoanId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "CopyId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "DueAt",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "ReturnedAt",
+          "type": "TEXT",
+          "key": "",
+          "nullable": true
+        },
+        {
+          "name": "ReturnedByEmployeeId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": true
+        }
+      ],
+      "meaning": "Один экземпляр, срок и сведения о возврате"
+    },
+    {
+      "name": "Fine",
+      "title": "Штраф",
+      "attributes": [
+        {
+          "name": "FineId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "LoanItemId",
+          "type": "INTEGER",
+          "key": "FK UQ",
+          "nullable": false
+        },
+        {
+          "name": "AmountCents",
+          "type": "INTEGER",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "AssessedAt",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "Reason",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        }
+      ],
+      "meaning": "Начисление за просрочку позиции выдачи"
+    },
+    {
+      "name": "Payment",
+      "title": "Платёж",
+      "attributes": [
+        {
+          "name": "PaymentId",
+          "type": "INTEGER",
+          "key": "PK",
+          "nullable": false
+        },
+        {
+          "name": "FineId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "ReceivedByEmployeeId",
+          "type": "INTEGER",
+          "key": "FK",
+          "nullable": false
+        },
+        {
+          "name": "AmountCents",
+          "type": "INTEGER",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "PaidAt",
+          "type": "TEXT",
+          "key": "",
+          "nullable": false
+        },
+        {
+          "name": "ReceiptNumber",
+          "type": "TEXT",
+          "key": "UQ",
+          "nullable": false
+        }
+      ],
+      "meaning": "Частичная либо полная оплата одного штрафа"
+    }
+  ],
+  "relations": [
+    {
+      "parent": "Publisher",
+      "child": "Book",
+      "foreign_key": "PublisherId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Book",
+      "child": "BookAuthor",
+      "foreign_key": "BookId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Author",
+      "child": "BookAuthor",
+      "foreign_key": "AuthorId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Book",
+      "child": "BookCategory",
+      "foreign_key": "BookId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Category",
+      "child": "BookCategory",
+      "foreign_key": "CategoryId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Book",
+      "child": "BookCopy",
+      "foreign_key": "BookId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Branch",
+      "child": "StorageLocation",
+      "foreign_key": "BranchId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "StorageLocation",
+      "child": "BookCopy",
+      "foreign_key": "LocationId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Reader",
+      "child": "Reservation",
+      "foreign_key": "ReaderId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Book",
+      "child": "Reservation",
+      "foreign_key": "BookId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Branch",
+      "child": "Reservation",
+      "foreign_key": "PickupBranchId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Reader",
+      "child": "Loan",
+      "foreign_key": "ReaderId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Employee",
+      "child": "Loan",
+      "foreign_key": "IssuedByEmployeeId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Loan",
+      "child": "LoanItem",
+      "foreign_key": "LoanId",
+      "parent_cardinality": "1",
+      "child_cardinality": "1..*"
+    },
+    {
+      "parent": "BookCopy",
+      "child": "LoanItem",
+      "foreign_key": "CopyId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Employee",
+      "child": "LoanItem",
+      "foreign_key": "ReturnedByEmployeeId",
+      "parent_cardinality": "0..1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "LoanItem",
+      "child": "Fine",
+      "foreign_key": "LoanItemId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..1"
+    },
+    {
+      "parent": "Fine",
+      "child": "Payment",
+      "foreign_key": "FineId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    },
+    {
+      "parent": "Employee",
+      "child": "Payment",
+      "foreign_key": "ReceivedByEmployeeId",
+      "parent_cardinality": "1",
+      "child_cardinality": "0..*"
+    }
+  ]
+}
